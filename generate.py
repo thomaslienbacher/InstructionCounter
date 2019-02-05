@@ -2,7 +2,7 @@
 
 import sys
 
-files = ['3dnow', 'adx', 'aes', 'avx', 'avx2', 'avx512', 'bmi1', 'bmi2', 'clwb', 'f16c', 'fma', 'fsgsbase', 'mmx', 'movbe', 'mpx', 'pclmulqdq', 'prefetch', 'rdrand', 'rdseed', 'sgx', 'sha', 'sse', 'sse2', 'sse3', 'sse4.1', 'sse4.2', 'ssse3', 'vmx']
+files = ['3dnow', 'adx', 'aes', 'avx', 'avx2', 'avx512', 'bmi1', 'bmi2', 'clmul', 'clwb', 'f16c', 'fma', 'fsgsbase', 'mmx', 'movbe', 'mpx', 'prefetch', 'rdrand', 'rdseed', 'sgx', 'sha', 'sse', 'sse2', 'sse3', 'sse4.1', 'sse4.2', 'ssse3', 'vmx']
 
 for file in files:
 	with open('raw/' + file + '.txt') as fp:

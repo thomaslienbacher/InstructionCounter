@@ -30,6 +30,9 @@ Supported extensions:
 * SSE4.2
 * SSSE3
 
+## Usage
+`$ ./ixcount.sh <binary>` 
+
 ## Source
-The information about the instructions was grabbed from the ORACLE docs: 
+The information about the instructions was gathered from the ORACLE docs: 
 [https://docs.oracle.com/cd/E37838_01/html/E61064/enmzx.html#scrolltoc](https://docs.oracle.com/cd/E37838_01/html/E61064/enmzx.html#scrolltoc).

@@ -74,6 +74,11 @@ if [ $_BMI2 -ne 0 ]; then
 	printf "%-12s %-12s\n" "BMI2:" "$_BMI2"
 fi
 
+_CLMUL=`echo "$INSTRUCTIONS" | awk '/[ \t](pclmulqdq|pclmullqlqdq|pclmulhqlqdq|pclmullqhqdq|pclmulhqhqdq)[ \t]/' | wc -l`
+if [ $_CLMUL -ne 0 ]; then
+	printf "%-12s %-12s\n" "CLMUL:" "$_CLMUL"
+fi
+
 _CLWB=`echo "$INSTRUCTIONS" | awk '/[ \t](clwb)[ \t]/' | wc -l`
 if [ $_CLWB -ne 0 ]; then
 	printf "%-12s %-12s\n" "CLWB:" "$_CLWB"
@@ -107,11 +112,6 @@ fi
 _MPX=`echo "$INSTRUCTIONS" | awk '/[ \t](bndcl|bndcn|bndcu|bndldx|bndmk|bndmov|bndstx)[ \t]/' | wc -l`
 if [ $_MPX -ne 0 ]; then
 	printf "%-12s %-12s\n" "MPX:" "$_MPX"
-fi
-
-_PCLMULQDQ=`echo "$INSTRUCTIONS" | awk '/[ \t](pclmulqdq)[ \t]/' | wc -l`
-if [ $_PCLMULQDQ -ne 0 ]; then
-	printf "%-12s %-12s\n" "PCLMULQDQ:" "$_PCLMULQDQ"
 fi
 
 _PREFETCH=`echo "$INSTRUCTIONS" | awk '/[ \t](prefetch|prefetchw|prefetchwt1)[ \t]/' | wc -l`
