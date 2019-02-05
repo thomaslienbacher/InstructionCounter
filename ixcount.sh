@@ -19,7 +19,7 @@ EOF
 	printf "%-12s %-12s %-12s\n" "BMI1" "BMI2" "CLWB"
 	printf "%-12s %-12s %-12s\n" "F16C" "FMA" "FSGSBASE"
 	printf "%-12s %-12s %-12s\n" "MMX" "MOVBE" "MPX"
-	printf "%-12s %-12s %-12s\n" "PCLMULQDQ" "PREFETCH" "RDRAND"
+	printf "%-12s %-12s %-12s\n" "CLMUL" "PREFETCH" "RDRAND"
 	printf "%-12s %-12s %-12s\n" "RDSEED" "SGX" "SHA"
 	printf "%-12s %-12s %-12s\n" "SSE" "SSE2" "SSE3"
 	printf "%-12s %-12s %-12s\n" "SSE4.1" "SSE4.2" "SSSE3"

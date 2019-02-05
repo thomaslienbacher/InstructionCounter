@@ -10,6 +10,7 @@ Supported extensions:
 * AVX512
 * BMI1
 * BMI2
+* CLMUL
 * CLWB
 * F16C
 * FMA
@@ -17,7 +18,6 @@ Supported extensions:
 * MMX
 * MOVBE
 * MPX
-* PCLMULQDQ
 * PREFETCH
 * RDRAND
 * RDSEED
